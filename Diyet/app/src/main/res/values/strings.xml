@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Di eT</string>
+    <string name="kayıt">example</string>
+
+    <string-array name="cinsiyet">
+        <item>Famale</item>
+        <item>Male</item>
+    </string-array>
+    <string-array name="AktiviteYoğunluk">
+        <item>Çok Hafif</item>
+        <item>Hafif</item>
+        <item>Orta</item>
+        <item>Ağır</item>
+        <item>Çok Ağır</item>
+    </string-array>
+
+</resources>

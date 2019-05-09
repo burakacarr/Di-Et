@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".KayitOl">
+
+    <Spinner
+        android:id="@+id/spYogunluk"
+        android:layout_width="207dp"
+        android:layout_height="45dp"
+
+        android:layout_marginStart="536dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aktiviteYogunluk"></Spinner>
+
+    <TextView
+        android:id="@+id/aktiviteYogunluk"
+        android:layout_width="187dp"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:text="Günlük Hareketlilik Durumunuz"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/etYas"
+        app:layout_constraintTop_toBottomOf="@+id/etMail" />
+
+    <EditText
+        android:id="@+id/etKullaniciAdi"
+        android:layout_width="143dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:background="@null"
+        android:ems="8"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGirisEkranı" />
+
+    <EditText
+        android:id="@+id/etParola"
+        android:layout_width="173dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:ems="8"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/etParolaTekrar"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/etParolaTekrar"
+        android:layout_width="176dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:background="@null"
+        android:ems="8"
+        android:hint="Password Reboot"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/etMail"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="203dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:ems="8"
+        android:hint="Mail"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKayitEkranı" />
+
+    <EditText
+        android:id="@+id/etKilo"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:ems="8"
+        android:hint="Weight(KG)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etKullaniciAdi" />
+
+    <EditText
+        android:id="@+id/etBoy"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:ems="8"
+        android:hint="Length(CM)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/etKilo"
+        app:layout_constraintTop_toBottomOf="@+id/etParola" />
+
+    <EditText
+        android:id="@+id/etYas"
+        android:layout_width="176dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:ems="8"
+        android:hint="Age"
+        android:inputType="number|textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/etBoy"
+        app:layout_constraintTop_toBottomOf="@+id/etParolaTekrar" />
+
+    <Button
+        android:id="@+id/kayitOl"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:onClick="Kaydet"
+        android:text="Register"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHata"
+        android:layout_width="86dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spCinsiyet"
+        android:layout_width="167dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/spYogunluk"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etKilo"></Spinner>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="139dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="184dp"
+        android:background="@drawable/sing_icon"
+        android:scaleType="center"
+        app:layout_constraintStart_toEndOf="@+id/btnGirisEkranı"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGirisEkranı"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="GiriseDon"
+        android:text="Sign İn"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnKayitEkranı"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="KayıtEkranı"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
